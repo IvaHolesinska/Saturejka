@@ -1,11 +1,10 @@
-*{
+* {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   background-color: lavenderblush;
-  font-family: 'Open Sans', sans-serif;
-
 }
 
 header {
@@ -15,55 +14,96 @@ header {
   margin: 15px 0;
 }
 
-.logo{
+.logo {
   max-width: 280px;
 }
 
 .intro {
- width: 400px;
- text-align: center;
- font-size: 1.1rem;
- font-weight: lighter;
+  width: 400px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: lighter;
 }
 
 .menu {
   width: 80%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  background-color: rgb(250, 250, 250) ;
+  background-color: rgb(240, 246, 247);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8px 5px;
 }
-.menu-title{
+.menu-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
 }
-.menu-subheading{
-  width: 350px;
+.menu-subheading {
   text-align: center;
   margin-top: 0;
   font-size: 0.9rem;
 }
 
-.info{
+.info,
+.meal {
   max-width: 85%;
   padding-bottom: 10px;
 }
-.info-gallery, .info-text{
+.info-gallery,
+.info-text {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 .info-gallery img {
- width: 30%;
+  width: 30%;
 }
 .info-text {
   flex-wrap: wrap;
 }
-.info-text p{
-max-width: 270px;
-flex-grow: 1;
-font-size: 0.6rem;
+.info-text p,
+.meal__text p {
+  max-width: 270px;
+  flex-grow: 1;
+  font-size: 0.7rem;
+}
+
+.meal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meal__img {
+  width: 35%;
+}
+
+.meal__text h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.meal__btn {
+  background-color: lavenderblush;
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 0.5px 0.2px 2px 0.2px;
+}
+
+@media (min-width: 500px) {
+  .meal__text {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 850px) {
+  .meal__text {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .meal__text {
+    margin: 0 50px;
+  }
 }
